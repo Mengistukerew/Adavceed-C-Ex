@@ -34,7 +34,7 @@ int CompareString(const String* str1, const String* str2); // see strcmp()
  */
 
 
-CopyString(String* dst, const String* src); // don’t forget to take care of the old underlying string!
+void CopyString(String* dst, const String* src); // don’t forget to take care of the old underlying string!
 								
-CopyCString(String* dst, const char* src);
+void CopyCString(String* dst, const char* src);
 */

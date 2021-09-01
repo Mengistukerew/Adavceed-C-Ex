@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include<Header.h>
 
 int GetStrings() {
 	char str[100];
@@ -11,7 +12,16 @@ int GetStrings() {
 
 	return(0);
 }
-int GetStringLength(char str[]) {
+int void main()
+{
+    char str1[100],str2[50];
+ 
+    printf("Enter string str1\n");
+    gets(str1);
+    
+    strcpy(str2,str1);
+    printf("Copied String(str2) is %s",str2);
+}(char str[]) {
 	int c = 0;
 	while (str[c] != '\0')
 		c++;
@@ -35,6 +45,17 @@ int CompareString()
 		printf("strings are not same");
 
 	return 0;
+}
+
+void CopyString()
+{
+	char str1[100], str2[50];
+
+	printf("Enter string str1\n");
+	gets(str1);
+
+	strcpy(str2, str1);
+	printf("Copied String(str2) is %s", str2);
 }
 
 

@@ -1,23 +1,28 @@
 #include <stdio.h>
 #include <string.h>
+#include <Header.h>
 
- 
 
 int main()
 {
 	GetString();
 
-	int IsEmpty();{
+	int IsEmpty(); {
 
-	char str[] = "";
+		char str[] = "";
 
-	if (str[0] == '\0') {
-		printf("string is empty");
+		if (str[0] == '\0') {
+			printf("string is empty");
+		}
+		else {
+			printf("string is not  empty");
+		}
+
+		return 0;
 	}
-	else {
-		printf("string is not  empty");
-	}
+	GetStringLength();
 
+	CompareString();
 	return 0;
 }
  
