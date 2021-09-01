@@ -1,7 +1,16 @@
 #include <stdio.h>
+int main() {
+    char x;
 
-int main()
-{
-	printf("Hello world");
-	return 0;
+    printf("Enter an char: ");
+
+    scanf(" %c", &x);
+
+    while (x != 'Q' && x != 'q') {
+
+        printf("  %c", x);
+        scanf(" %c", &x);
+    }
+
+    return 0;
 }
